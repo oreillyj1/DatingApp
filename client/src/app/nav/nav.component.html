@@ -1,15 +1,15 @@
 <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
   <div class="container">
-    <a class="navbar-brand" href="#">Some heading</a>
+    <a class="navbar-brand" routerLink='/'>Some heading</a>
       <ul class="navbar-nav"  *ngIf="accountService.currentUser$ | async">
         <li class="nav-item">
-          <a class="nav-link" href="#">matches</a>
+          <a class="nav-link" routerLink="/members" routerLinkActive="active">matches</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">lists</a>
+          <a class="nav-link" routerLink="/lists"  routerLinkActive="active">lists</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link">messages</a>
+          <a class="nav-link" routerLink="/messages"  routerLinkActive="active">messages</a>
         </li>
 
       </ul>
